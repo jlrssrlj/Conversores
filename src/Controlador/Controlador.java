@@ -1,6 +1,6 @@
 package Controlador;
 
-import Modelo.Dolar;
+import Modelo.Moneda;
 import Vista.vista;
 
 import javax.swing.*;
@@ -13,11 +13,11 @@ import javax.swing.JLabel;
 
 public class Controlador implements ActionListener {
     private vista vis;
-    private Dolar dolar;
+    private Moneda moneda;
 
     public Controlador(vista vis) {
         this.vis = vis;
-        this.dolar = new Dolar(vis);
+        this.moneda = new Moneda(vis);
         this.vis.convertir.addActionListener(this);
     }
 
@@ -56,9 +56,9 @@ public class Controlador implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.vis.convertir) {
             try {
-                this.dolar.setCambio(Double.parseDouble(this.vis.cantidad.getText()));
-                double resultado = this.dolar.conversor();
-                DecimalFormat df = new DecimalFormat("#.##");
+                this.moneda.setCambio(Double.parseDouble(this.vis.cantidad.getText()));
+                double resultado = this.moneda.conversor();
+                DecimalFormat df = new DecimalFormat("#.####");
                 this.vis.resultado.setText(df.format(resultado));
 
             } catch (NumberFormatException ex) {

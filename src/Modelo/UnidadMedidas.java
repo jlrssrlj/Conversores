@@ -9,4 +9,9 @@ public class UnidadMedidas extends Convertir implements  Conversor{
     public double conversor() {
         return 0;
     }
+
+    @Override
+    public int obtenerIndice(String moneda) {
+        return 0;
+    }
 }

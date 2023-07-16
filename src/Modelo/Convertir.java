@@ -20,4 +20,8 @@ public abstract class Convertir {
     public void setCambio(double cambio) {
         this.cambio = cambio;
     }
+
+
+
+    public abstract int obtenerIndice(String moneda);
 }

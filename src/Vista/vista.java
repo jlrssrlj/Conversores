@@ -11,9 +11,6 @@ public class vista extends JFrame  {
 
     public JButton convertir;
 
-
-
-
     public vista(){
         setLayout(null);
         divisas1 = new JComboBox();
@@ -32,15 +29,12 @@ public class vista extends JFrame  {
         divisas2.setBounds(150,60,100,30);
         add(divisas2);
 
-
-
         divisas2.addItem("");
         divisas2.addItem("USD");
         divisas2.addItem("COP");
         divisas2.addItem("MEX");
         divisas2.addItem("P.ARG");
         divisas2.addItem("YEN");
-
 
         cantidad = new JTextField();
         cantidad.setBounds(10,30,100,30);

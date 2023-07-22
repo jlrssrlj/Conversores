@@ -23,5 +23,5 @@ public abstract class Convertir {
 
 
 
-    public abstract int obtenerIndice(String moneda);
+    public abstract int obtenerIndice(String valor);
 }

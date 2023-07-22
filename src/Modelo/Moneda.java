@@ -32,8 +32,8 @@ public class Moneda extends Convertir implements Conversor {
     }
 
     @Override
-    public int obtenerIndice(String moneda) {
-        switch (moneda) {
+    public int obtenerIndice(String valor) {
+        switch (valor) {
             case "COP":
                 return 0;
             case "USD":

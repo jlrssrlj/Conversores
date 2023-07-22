@@ -10,7 +10,7 @@ public class Moneda extends Convertir implements Conversor {
             {4195.18, 1, 16.75, 264.57,0.0072},//usd
             {244.72 , 0.060, 1.0, 15.80,8.28},//mexico
             {15.45 , 0.0038,1.0,0.063 , 0.52},//argentina
-            {29.47,0.0072,0.12,1.91,1}
+            {29.47,0.0072,0.12,1.91,1}//yan
     };
 
     public Moneda(vista vis) {

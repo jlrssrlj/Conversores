@@ -1,7 +1,7 @@
 package Controlador;
 
 import Modelo.Moneda;
-import Vista.vista;
+import Vista.VistaMonedas;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,10 +12,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 public class Controlador implements ActionListener {
-    private vista vis;
+    private VistaMonedas vis;
     private Moneda moneda;
 
-    public Controlador(vista vis) {
+    public Controlador(VistaMonedas vis) {
         this.vis = vis;
         this.moneda = new Moneda(vis);
         this.vis.convertir.addActionListener(this);

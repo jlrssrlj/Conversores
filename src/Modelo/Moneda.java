@@ -1,9 +1,9 @@
 package Modelo;
 
-import Vista.vista;
+import Vista.VistaMonedas;
 
 public class Moneda extends Convertir implements Conversor {
-    private vista vis;
+    private VistaMonedas vis;
 
     private double[][] tasasConversion = {
             {1.0, 0.000245, 0.0041, 29.53,29.47},//colombia
@@ -13,7 +13,7 @@ public class Moneda extends Convertir implements Conversor {
             {29.47,0.0072,0.12,1.91,1}//yan
     };
 
-    public Moneda(vista vis) {
+    public Moneda(VistaMonedas vis) {
         this.vis = vis;
     }
 

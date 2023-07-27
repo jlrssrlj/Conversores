@@ -4,20 +4,20 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class vista extends JFrame  {
+public class VistaMonedas extends JFrame  {
 
     public JComboBox divisas1, divisas2;
     public JTextField cantidad, resultado;
 
     public JButton convertir;
 
-    public vista(){
+    public VistaMonedas(){
         setLayout(null);
         divisas1 = new JComboBox();
         divisas1.setBounds(150,30,100,30);
         add(divisas1);
 
-        divisas1.addItem("");
+
         divisas1.addItem("USD");
         divisas1.addItem("COP");
         divisas1.addItem("MEX");
@@ -29,7 +29,7 @@ public class vista extends JFrame  {
         divisas2.setBounds(150,60,100,30);
         add(divisas2);
 
-        divisas2.addItem("");
+
         divisas2.addItem("USD");
         divisas2.addItem("COP");
         divisas2.addItem("MEX");

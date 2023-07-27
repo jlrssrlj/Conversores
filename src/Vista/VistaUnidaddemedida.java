@@ -16,7 +16,7 @@ public class VistaUnidaddemedida extends JFrame {
         Entrada.setBounds(150,30,100,30);
         add(Entrada);
 
-        Entrada.addItem("");
+
         Entrada.addItem("MILIMETROS");
         Entrada.addItem("CENTIMETROS");
         Entrada.addItem("METROS");
@@ -28,7 +28,7 @@ public class VistaUnidaddemedida extends JFrame {
         Salida.setBounds(150,60,100,30);
         add(Salida);
 
-        Salida.addItem("");
+
         Salida.addItem("MILIMETROS");
         Salida.addItem("CENTIMETROS");
         Salida.addItem("METROS");
